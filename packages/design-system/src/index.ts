@@ -13,3 +13,5 @@ export { ThemeProvider, useTheme } from "./provider/ThemeProvider";
 
 // Components
 export { Button, type ButtonProps } from "./components/Button";
+export { Card, type CardProps } from "./components/Card";
+export { ThemeToggle, type ThemeToggleProps } from "./components/ThemeToggle";

@@ -38,14 +38,9 @@ export function ThemeProvider({
     [],
   );
 
-  const value = useMemo(
-    () => ({ theme, mode, toggle, setMode }),
-    [theme, mode, toggle],
-  );
+  const value = useMemo(() => ({ theme, mode, toggle, setMode }), [theme, mode, toggle]);
 
-  return (
-    <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>
-  );
+  return <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>;
 }
 
 // Hooken — använd i vilken komponent som helst
